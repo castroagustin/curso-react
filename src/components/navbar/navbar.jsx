@@ -1,24 +1,32 @@
-import React from 'react';
 import './navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons'
 
-export default function NavBar() {
+const NavBar = () => {
     return (
-        <div className='navBar'>
-            <h1 className='navBar__logo'>Libros.com</h1>
-            <div className="navBar__search">
-                <FontAwesomeIcon
-                    className='navBar__searchIcon'
-                    icon={faSearch} />
-                <input type='text' className='navBar__searchInput' />
+        <nav className='navBar'>
+            <ul className='navBar__menu'>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div className='navBar__iconsContainer'>
+                <div className="navBar__search">
+                    <FontAwesomeIcon
+                        className='navBar__searchIcon'
+                        icon={faSearch} />
+                    <input type='text' className='navBar__searchInput' placeholder='Buscar...' />
+                </div>
+                <div className='navBar__cartContainer'>
+                    <span className='cart__badge'>3</span>
+                    <FontAwesomeIcon
+                        className='navBar__cartIcon'
+                        icon={faShoppingCart} />
+                </div>
             </div>
-            <div className='navBar__cartContainer'>
-                <span className='cart__badge'>3</span>
-                <FontAwesomeIcon
-                    className='navBar__cartIcon'
-                    icon={faShoppingCart} />
-            </div>
-        </div>
+        </nav>
     )
-};
+}
+
+export default NavBar;
