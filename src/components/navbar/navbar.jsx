@@ -1,15 +1,15 @@
-import './navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons'
+import './navbar.scss';
 
 const NavBar = () => {
     return (
         <nav className='navBar'>
-            <ul className='navBar__menu'>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Quienes somos</a></li>
-                <li><a href="#">Contacto</a></li>
+            <ul className='navBar__menu' >
+                <li><a href="./">Inicio</a></li>
+                <li><a href="./">Categorias</a></li>
+                <li><a href="./">Quienes somos</a></li>
+                <li><a href="./">Contacto</a></li>
             </ul>
             <div className='navBar__iconsContainer'>
                 <div className="navBar__search">
@@ -19,7 +19,7 @@ const NavBar = () => {
                     <input type='text' className='navBar__searchInput' placeholder='Buscar...' />
                 </div>
                 <div className='navBar__cartContainer'>
-                    <span className='cart__badge'>3</span>
+                    <span className='cart__badge'>4</span>
                     <FontAwesomeIcon
                         className='navBar__cartIcon'
                         icon={faShoppingCart} />

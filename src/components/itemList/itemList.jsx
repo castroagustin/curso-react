@@ -1,4 +1,4 @@
-import './itemList.css'
+import './itemList.scss'
 
 const ItemList = () => {
     return (
