@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
-import './itemCount.scss';
+import '../scss/ItemCount.scss';
 
 const ItemCount = ({ stock, initial }) => {
 
     const onAdd = () => {
         if (cantidad <= disponible) {
             setDisponible(disponible - cantidad);
-            setCantidad(0)
-            alert(`Agrego ${cantidad} productos al carrito`);
+            alert(`Agrego ${cantidad} ${cantidad > 1 ? 'productos' : 'producto'} al carrito`);
+            setCantidad(initial);
         }
     }
 
@@ -19,7 +19,7 @@ const ItemCount = ({ stock, initial }) => {
         }
     }
     const restarCant = () => {
-        if (cantidad >= 1) {
+        if (cantidad > 1) {
             setCantidad(Number(cantidad) - 1);
         }
     }
@@ -35,12 +35,12 @@ const ItemCount = ({ stock, initial }) => {
                 <FontAwesomeIcon
                     className='itemCount__icon'
                     icon={faMinus}
-                    onClick={() => restarCant()} />
+                    onClick={restarCant} />
                 <span className='itemCount__number'>{cantidad}</span>
                 <FontAwesomeIcon
                     className='itemCount__icon'
                     icon={faPlus}
-                    onClick={() => sumarCant()} />
+                    onClick={sumarCant} />
             </div>
             <span className='itemCount__purchase' onClick={onAdd}>Agregar al carrito</span>
         </div>

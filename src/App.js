@@ -1,7 +1,7 @@
 import './App.css';
-import NavBar from './components/navbar/navbar';
-import ItemList from './components/itemList/itemList';
-import ItemCount from './components/itemCount/itemCount';
+import NavBar from './components/NavBar';
+import ItemList from './components/ItemList';
+import ItemCount from './components/ItemCount';
 
 const App = () => {
   return (

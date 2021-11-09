@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons'
-import './navbar.scss';
+import '../scss/NavBar.scss';
 
 const NavBar = () => {
     return (
