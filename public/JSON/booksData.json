@@ -1,0 +1,163 @@
+[
+    {
+        "id": 1,
+        "title": "Padre rico, padre pobre",
+        "price": 5000,
+        "pictureUrl": "padre-rico.jpg",
+        "category": "Economía"
+    },
+    {
+        "id": 2,
+        "title": "Piense y hagase rico",
+        "price": 4000,
+        "pictureUrl": "piense-y-hagase-rico.jpg",
+        "category": "Economía"
+    },
+    {
+        "id": 3,
+        "title": "Atomic habits",
+        "price": 7500,
+        "pictureUrl": "atomic-habits.jpg",
+        "category": "Autoayuda"
+    },
+    {
+        "id": 4,
+        "title": "El poder de los habitos",
+        "price": 7000,
+        "pictureUrl": "el-poder-de-los-habitos.jpg",
+        "category": "Autoayuda"
+    },
+    {
+        "id": 5,
+        "title": "S.W: Luz de los Jedi",
+        "price": 6000,
+        "pictureUrl": "sw-luz-de-los-jedi.jpg",
+        "category": "Ficción"
+    },
+    {
+        "id": 6,
+        "title": "S.W: Thrawm",
+        "price": 6000,
+        "pictureUrl": "sw-thrawn.jpg",
+        "category": "Ficción"
+    },
+    {
+        "id": 7,
+        "title": "12 reglas para vivir",
+        "price": 4000,
+        "pictureUrl": "12-reglas-para-vivir.jpg",
+        "category": "Autoayuda"
+    },
+    {
+        "id": 8,
+        "title": "Carta al rey",
+        "price": 3500,
+        "pictureUrl": "carta-al-rey.jpg",
+        "category": "Ficción"
+    },
+    {
+        "id": 9,
+        "title": "Despertando al gigante interior",
+        "price": 7000,
+        "pictureUrl": "despertando-al-gigante-interior.jpg",
+        "category": "Autoayuda"
+    },
+    {
+        "id": 10,
+        "title": "Ébano",
+        "price": 4500,
+        "pictureUrl": "ebano.jpg",
+        "category": "Ficción"
+    },
+    {
+        "id": 11,
+        "title": "El inversor inteligente",
+        "price": 5000,
+        "pictureUrl": "el-inversor-inteligente.jpg",
+        "category": "Economía"
+    },
+    {
+        "id": 12,
+        "title": "El italiano",
+        "price": 5500,
+        "pictureUrl": "el-italiano.jpg",
+        "category": "Ficción"
+    },
+    {
+        "id": 13,
+        "title": "El señor de las moscas",
+        "price": 5000,
+        "pictureUrl": "el-senor-de-las-moscas.jpg",
+        "category": "Ficción"
+    },
+    {
+        "id": 14,
+        "title": "Harry Potter y la cámara secreta",
+        "price": 6000,
+        "pictureUrl": "harry-potter-camara-secreta.jpg",
+        "category": "Ficción"
+    },
+    {
+        "id": 15,
+        "title": "Harry Potter y las reliquias de la muerte",
+        "price": 5000,
+        "pictureUrl": "harry-potter-reliquias.jpg",
+        "category": "Ficción"
+    },
+    {
+        "id": 16,
+        "title": "Marfil",
+        "price": 6000,
+        "pictureUrl": "marfil.jpg",
+        "category": "Ficción"
+    },
+    {
+        "id": 17,
+        "title": "Odisea",
+        "price": 6000,
+        "pictureUrl": "odisea.jpg",
+        "category": "Ficción"
+    },
+    {
+        "id": 18,
+        "title": "La psicologia del dinero",
+        "price": 7000,
+        "pictureUrl": "psicologia-del-dinero.jpg",
+        "category": "Economía"
+    },
+    {
+        "id": 19,
+        "title": "S.W: Heredero del imperio",
+        "price": 6000,
+        "pictureUrl": "sw-heredero-del-imperio.jpg",
+        "category": "Ficción"
+    },
+    {
+        "id": 20,
+        "title": "The Bitcoin standard",
+        "price": 7000,
+        "pictureUrl": "the-bitcoin-standard.jpg",
+        "category": "Economía"
+    },
+    {
+        "id": 21,
+        "title": "Tiny habits",
+        "price": 6500,
+        "pictureUrl": "tiny-habits.jpg",
+        "category": "Autoayuda"
+    },
+    {
+        "id": 22,
+        "title": "Will",
+        "price": 5500,
+        "pictureUrl": "will.jpg",
+        "category": "Autoayuda"
+    },
+    {
+        "id": 23,
+        "title": "Club de las 5 am",
+        "price": 4000,
+        "pictureUrl": "club-de-las-5am.jpg",
+        "category": "Autoayuda"
+    }
+]

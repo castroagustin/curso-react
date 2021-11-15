@@ -5,17 +5,19 @@
   box-sizing: border-box;
 }
 :root{
-  --dark-grey: #3B3B3B;
   --primary-color: #7c95b4;
+  --primary-dark: #435469;
+  --dark-grey: #3B3B3B;
+  --light-gray: #A5A5A5;
   --white: #fff;
-  --light-gray: #f2f2f2;
-  --white-transparent: #fff5;
+  --bg: #f7f7f7;
 }
 
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #f2f2f2;
+  background-color: var(--bg);
+  padding-top: 50px;
 }
 
 code {

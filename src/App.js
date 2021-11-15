@@ -1,13 +1,13 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import ItemList from './components/ItemList';
 import ItemCount from './components/ItemCount';
+import ItemListContainer from './components/ItemListContainer';
 
 const App = () => {
   return (
     <div className="App">
       <NavBar />
-      <ItemList />
+      <ItemListContainer />
       <ItemCount stock='15' initial='1' />
     </div>
   );
