@@ -15,7 +15,10 @@ const ItemListContainer = () => {
                 resolve(
                     fetch(dataSrc)
                         .then(res => res.json())
-                        .then(res => setData(res))
+                        .then(res => {
+                            setData(res)
+                            localStorage.setItem('products', JSON.stringify(res));
+                        })
                 )
             }, 2000)
         })

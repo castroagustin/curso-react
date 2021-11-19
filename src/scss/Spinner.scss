@@ -1,0 +1,17 @@
+.spinner{
+    border: 8px solid #ddd;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-left-color: var(--primary-dark);
+    animation: spinner 1s ease infinite;
+
+    @keyframes spinner {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}

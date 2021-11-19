@@ -10,7 +10,7 @@
     position: relative;
     &__imgContainer{
         width: 100%;
-        padding: 1rem 0;
+        padding: 1rem;
         max-height: 70%;
     }
     &__img{
@@ -29,7 +29,7 @@
         font-size: 1rem;
         font-weight: 600;
         margin-bottom: .2rem;
-        color: var(--primary-dark);
+        color: var(--dark-gray);
     }
     &__secondaryText{
         font-size: .9rem;
@@ -48,7 +48,7 @@
     }
 }
 
-@media (min-width: 576px) and (max-width: 767px){
+@media (min-width: 576px){
     .item {
         width: 31%;
     }
@@ -71,6 +71,10 @@
         width: 14.6%;
         &__addToCart{
             font-size: .8rem;
+        }
+        &__imgContainer{
+            padding: 2rem;
+            padding-top: 1rem;
         }
     }
 }
