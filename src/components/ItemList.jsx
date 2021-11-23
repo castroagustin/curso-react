@@ -1,10 +1,18 @@
 import Item from "./Item";
 import '../scss/ItemList.scss'
+import { Link } from 'react-router-dom';
 
-const ItemList = ({ items }) => {
+const ItemList = ({ items, setCurrentProd }) => {
+
     return (
         <section className='itemList'>
-            {items.map(item => <Item item={item} key={item.id} />)}
+            {items?.map(item => {
+                return (
+                    <Link to={`/item/${item.id}`} className='item' onClick={() => setCurrentProd(item)}>
+                        <Item item={item} key={item.id} />
+                    </Link>
+                )
+            })}
         </section>
     )
 }

@@ -18,7 +18,10 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: var(--bg);
-  padding-top: 50px;
+  margin-top: 50px;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 code {

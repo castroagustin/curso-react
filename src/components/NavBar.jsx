@@ -1,16 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons'
 import '../scss/NavBar.scss';
+import { Link } from 'react-router-dom';
 
-const NavBar = () => {
+const NavBar = ({ setCurrentCategory }) => {
     return (
         <nav className='navBar'>
             <ul className='navBar__menu' >
-                <li><a href="./">Inicio</a></li>
-                <li><a href="./">Categorias</a></li>
-                <li><a href="./">Quienes somos</a></li>
-                <li><a href="./">Contacto</a></li>
+                <li><a href="/">Inicio</a></li>
             </ul>
+            <ul className='navBar__menu navBar__menu--categories' >
+                <Link to='/categorias/Autoayuda' onClick={() => setCurrentCategory('Autoayuda')}>Autoayuda</Link>
+                <Link to='/categorias/Economía' onClick={() => setCurrentCategory('Economía')}>Economía</Link>
+                <Link to='/categorias/Ficción' onClick={() => setCurrentCategory('Ficción')}>Ficción</Link>
+            </ul >
             <div className='navBar__iconsContainer'>
                 <div className="navBar__search">
                     <FontAwesomeIcon

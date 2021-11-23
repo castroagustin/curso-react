@@ -5,6 +5,10 @@
     border-radius: 50%;
     border-left-color: var(--primary-dark);
     animation: spinner 1s ease infinite;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     @keyframes spinner {
         0%{

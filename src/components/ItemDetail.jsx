@@ -1,10 +1,12 @@
+import { useEffect } from 'react';
 import '../scss/ItemDetail.scss';
 
 const ItemDetail = ({ item }) => {
-    const { title, author, price, category, description } = item;
+    useEffect(() => { console.log(item) })
+    const { title, author, price, category, description, pictureUrl } = item;
     return (
         <>
-            <img className='itemDetail__img' src='assets/padre-rico.jpg' alt={title}></img>
+            <img className='itemDetail__img' src={`../assets/${pictureUrl}`} alt={title}></img>
             <div className='itemDetail__textContainer'>
                 <h2 className='itemDetail__title'>{title}</h2>
                 <div className='itemDetail__details'>

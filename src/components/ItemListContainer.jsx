@@ -1,32 +1,16 @@
 import '../scss/ItemListContainer.scss'
 import ItemList from './ItemList';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import Spinner from './Spinner';
 
-const ItemListContainer = () => {
+const ItemListContainer = ({ data, setCurrentProd }) => {
 
     useEffect(() => {
-        getData('JSON/booksData.json');
     }, [])
-
-    const [data, setData] = useState([]);
-    const getData = (dataSrc) => {
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(
-                    fetch(dataSrc)
-                        .then(res => res.json())
-                        .then(res => {
-                            setData(res)
-                            localStorage.setItem('products', JSON.stringify(res));
-                        })
-                )
-            }, 2000)
-        })
-    }
 
     return (
         <section className='itemListContainer'>
-            <ItemList items={data} />
+            {data ? <ItemList items={data} setCurrentProd={setCurrentProd} /> : <Spinner />}
         </section>
     );
 }
