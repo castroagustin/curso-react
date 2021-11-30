@@ -37,4 +37,19 @@
         font-weight: 500;
         margin-bottom: 1rem;
     }
+    &__cartBtn{
+        display: block;
+        text-decoration: none;
+        background-color: var(--primary-color);
+        color: var(--white);
+        font-size: .8rem;
+        padding: .5rem;
+        text-align: center;
+        margin-top: 1rem;
+        border-radius: 3px;
+        width: fit-content;
+        svg{
+            margin-right: 10px;
+        }
+    }
 }

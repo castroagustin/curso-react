@@ -1,8 +1,18 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import ItemCount from './ItemCount';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import '../scss/ItemDetail.scss';
 
 const ItemDetail = ({ item }) => {
-    useEffect(() => { console.log(item) })
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
+    const [cantidad, setCantidad] = useState(1);
+    const [cartBtn, setCartBtn] = useState(false);
+
     const { title, author, price, category, description, pictureUrl } = item;
     return (
         <>
@@ -16,6 +26,14 @@ const ItemDetail = ({ item }) => {
                 </div>
                 <h3 className='itemDetail__price'>${price}</h3>
                 <span className='itemDetail__description'>{description}</span>
+                {
+                    cartBtn ?
+                        <Link to={'/cart'} className='itemDetail__cartBtn'>
+                            <FontAwesomeIcon icon={faShoppingCart} /> Agregaste {cantidad} producto/s al carrito
+                        </Link> :
+                        <ItemCount stock={item.stock} initial={1} cantidad={cantidad} setCantidad={setCantidad} setCartBtn={setCartBtn} />
+                }
+
             </div>
         </>
     )

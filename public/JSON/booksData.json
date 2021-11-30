@@ -4,6 +4,7 @@
         "title": "Padre rico, padre pobre",
         "author": "Robert T. Kiyosaki",
         "price": 5000,
+        "stock": 12,
         "pictureUrl": "padre-rico.jpg",
         "category": "Economía",
         "description": "El autor y conferencista Robert Kiyosaki desarrolló una perspectiva económica única a partir de la exposición que tuvo a dos influencias: su propio padre, altamente educado pero muy inestable y el padre multimillonario, sin educación universitaria, de su mejor amigo. Los problemas monetarios que su padre pobre experimentó toda la vida rompían con lo que le comunicaba su padre rico: que la clase pobre y la clase media trabajan por dinero pero la clase alta, hace que el dinero trabaje para ellos."
@@ -13,6 +14,7 @@
         "title": "Piense y hagase rico",
         "author": "Napoleon Hill",
         "price": 4000,
+        "stock": 16,
         "pictureUrl": "piense-y-hagase-rico.jpg",
         "category": "Economía",
         "description": "Napoleon Hill, tras mas de veinte anos investigando cientificamente a los hombres mas ricos de su epoca, descubrio el secreto de la opulencia del famoso industrial y escritor Andrew Carnegie, quien no solo llego a ser multimillonario sino que hizo millonarios a multitud de personas. Se trata de una obra disenada a partir de la experiencia de la humanidad en conseguir el triunfo economico y personal. Gracias a ella, la riqueza y la realizacion personal quedan al alcance de todas aquellas personas que lo deseen. No dejes el exito en manos de unos pocos y lucha por tu trozo de pastel."
@@ -22,6 +24,7 @@
         "title": "Atomic habits",
         "author": "James Clear",
         "price": 7500,
+        "stock": 15,
         "pictureUrl": "atomic-habits.jpg",
         "category": "Autoayuda",
         "description": "Atomic Habits parte de una simple pero poderosa pregunta: ¿Cómo podemos vivir mejor? Sabemos que unos buenos hábitos nos permiten mejorar significativamente nuestra vida, pero con frecuencia nos desviamos del camino: dejamos de hacer ejercicio, comemos mal, dormimos poco, despilfarramos. ¿Por qué es tan fácil caer en los malos hábitos y tan complicado seguir los buenos? James Clear nos brinda fantásticas ideas basadas en investigaciones científicas, que le permiten revelarnos cómo podemos transformar pequeños hábitos cotidianos para cambiar nuestra vida y mejorarla."
@@ -31,6 +34,7 @@
         "title": "El poder de los habitos",
         "author": "Charles Duhigg",
         "price": 7000,
+        "stock": 12,
         "pictureUrl": "el-poder-de-los-habitos.jpg",
         "category": "Autoayuda",
         "description": "En 'El poder de los hábitos', el premiado periodista Charles Duhigg nos lleva al límite de los descubrimientos científicos que explican por qué existen los hábitos, cómo nos condicionan y cómo cambiarlos. Combinando información exhaustiva con descripciones fascinantes, Duhigg presenta una manera completamente nueva de entender la naturaleza humana y su potencial. En esencia, El poder de los hábitos contiene un mensaje estimulante: la clave para hacer ejercicio con regularidad, perder peso, ser más productivo y conseguir el éxito consiste en entender el modo en que funcionan los hábitos. Como demuestra Duhigg, si somos capaces de sacar partido a este nuevo método, conseguiremos transformar nuestra vida laboral, social y personal."
@@ -40,6 +44,7 @@
         "title": "S.W: Luz de los Jedi",
         "author": "Soule, Charles",
         "price": 6000,
+        "stock": 18,
         "pictureUrl": "sw-luz-de-los-jedi.jpg",
         "category": "Ficción",
         "description": "Mucho antes de la Primera Orden, antes del Imperio, incluso antes de La Amenaza Fantasma, existió la edad de oro. Dos siglos antes de la saga Skywalker... Vivimos una epoca dorada. Intrépidos exploradores hiperespaciales expanden los límites de la Republica hasta las estrellas más remotas, los mundos prosperan bajo el benévolo liderato del Senado y reina la paz en la galaxia, defendida por la sabiduría y fuerza de la célebre orden de usuarios de la Fuerza conocidos como Jedi. Con los jedi en la cima de su poder, los ciudadanos libres de la galaxia confían en su habilidad para capear cualquier temporal."
@@ -49,6 +54,7 @@
         "title": "S.W: Thrawn",
         "author": "Timothy Zahn",
         "price": 6000,
+        "stock": 2,
         "pictureUrl": "sw-thrawn.jpg",
         "category": "Ficción",
         "description": "Uno de los guerreros más astutos y despiadados de la historia del Imperio Galáctico, el Gran Almirante Thrawn es también uno de los personajes más cautivadores del universo de Star Wars, desde su introducción en el clásico Heredero del Imperio del exitoso autor Timothy Zahn hasta sus continuas aventuras. en Dark Force Rising, The Last Command y más. Pero los orígenes de Thrawn y la historia de su ascenso en las filas imperiales siguen siendo un misterio. Ahora, en Star Wars: Thrawn, Timothy Zahn narra los fatídicos eventos que lanzaron al maestro de piel azul y ojos rojos de la estrategia militar y la guerra letal a los más altos reinos del poder y la infamia."
@@ -58,6 +64,7 @@
         "title": "12 reglas para vivir",
         "author": "Jordan B. Peterson",
         "price": 4000,
+        "stock": 10,
         "pictureUrl": "12-reglas-para-vivir.jpg",
         "category": "Autoayuda",
         "description": "Jordan Peterson, «el pensador más polémico e influyente de nuestro tiempo», según el Spectator, nos propone un apasionante viaje por la historia de las ideas y de la ciencia para tratar de responder a una pregunta esencial: qué información básica necesitamos para vivir en plenitud. Con humor, amenidad y espíritu divulgativo, Peterson recorre países, tiempos y culturas al mismo tiempo que reflexiona sobre conceptos como la aventura, la disciplina y la responsabilidad. Todo con el fin de desgranar el saber humano en doce hondas y prácticas reglas para la vida que rompen radicalmente con los lugares comunes de la corrección política."
@@ -67,6 +74,7 @@
         "title": "Carta al rey",
         "author": "Tonke Dragt",
         "price": 3500,
+        "stock": 2,
         "pictureUrl": "carta-al-rey.jpg",
         "category": "Ficción",
         "description": "Estamos en plena Edad Media. Tiuri, un joven de 16 años, ha hecho méritos para ser nombrado caballero del rey Dagonaut. La noche anterior a su nombramiento, mientras vela las armas en una capilla, escucha llamadas que vienen del exterior. Incumpliendo las normas que la Caballería establece para esa noche (no hablar, no moverse del lugar o no hacer caso de los ruidos extraños), el joven decide salir afuera: alguien pide ayuda para que se dé al Caballero Negro del Escudo Blanco una carta de suma importancia que ha de llegar urgente al rey Unawen."
@@ -76,6 +84,7 @@
         "title": "Despertando al gigante interior",
         "author": "Anthony Robbins",
         "price": 7000,
+        "stock": 12,
         "pictureUrl": "despertando-al-gigante-interior.jpg",
         "category": "Autoayuda",
         "description": "¿Se deja arrastrar por circunstancias que parecen estar fuera de su control Esa carencia de autodominio es consecuencia de múltiples factores hábitos negativos escaso conocimiento de los propios valores personales dificultades en las relaciones con los demás... Todo ello causa esa angustiosa sensación de estar manejado por los otros por lo otro. En Despertando al gigante interior Anthony Robbins propone una serie de pautas sencillas de seguir que nos ayudan a descubrir nuestras creencias más profundas nuestras pregunta fundamentales. Propone en suma un viaje de autodescubrimiento cuya estación terminal es la más plena y satisfactoria realización de uno mismo."
@@ -85,6 +94,7 @@
         "title": "Ébano",
         "author": "Mercedes Ron",
         "price": 4500,
+        "stock": 11,
         "pictureUrl": "ebano.jpg",
         "category": "Ficción",
         "description": "Marfil ya no es la misma. Todo lo que creía que era verdad ha demostrado ser una mentira más. También Sebastian.   Sus enemigos intentarán doblegarla, hacerla suya, la amenazarán con acabar con todo aquello que Marfil ama... Ahora que está en peligro es cuando más necesita que alguien le diga al oído que todo irá bien. Aunque sea otra mentira. Con Sebastian ocupando cada parte de su mente, pero dolida por su traición, Marfil se obligará a sí misma a no sentir nada por él. Pero, cuando los secretos empiezan a desvelarse, ni siquiera su férrea voluntad conseguirá que lo odie tanto como ella desea. ¿Podrá Marfil perdonar tantas mentiras? ¿Será capaz de dejar a un lado el pasado y escuchar su corazón?"
@@ -94,6 +104,7 @@
         "title": "El inversor inteligente",
         "author": "Benjamin Graham",
         "price": 5000,
+        "stock": 17,
         "pictureUrl": "el-inversor-inteligente.jpg",
         "category": "Economía",
         "description": "Considerado el más importante consejero en inversión del siglo XX, Benjamin Graham enseñó e inspiró a financieros de todo el mundo. Presentó su filosofía, basada en el concepto de 'invertir en valor', en El inversor inteligente, un libro que se convirtió en la biblia de los inversores ya desde su primera publicación en 1949. En él, Benjamin Graham alerta a los inversores sobre cómo evitar errores de estrategia, al tiempo que describe cómo desarrollar un plan racional para comprar acciones y aumentar su valor. Todo ello pensando en el largo plazo, pues trata de un método dirigido a inversores y no a especuladores: mientras que el especulador sólo tiene en cuenta las tendencias del mercado, el inversor obtiene sus beneficios con base en la disciplina y la investigación."
@@ -103,6 +114,7 @@
         "title": "El italiano",
         "author": "Arturo Pérez",
         "price": 5500,
+        "stock": 12,
         "pictureUrl": "el-italiano.jpg",
         "category": "Ficción",
         "description": "En los años 1942 y 1943, durante la Segunda Guerra Mundial, buzos de combate italianos hundieron o dañaron catorce barcos aliados en Gibraltar y la bahía de Algeciras. En esta novela, inspirada en hechos reales, sólo algunos personajes y situaciones son imaginarios. Elena Arbués, una librera de veintisiete años, encuentra una madrugada mientras pasea por la playa a uno de esos buzos, desvanecido entre la arena y el agua. Al socorrerlo, la joven ignora que esa determinación cambiará su vida y que el amor será sólo parte de una peligrosa aventura"
@@ -112,6 +124,7 @@
         "title": "El señor de las moscas",
         "author": "William Golding",
         "price": 5000,
+        "stock": 6,
         "pictureUrl": "el-senor-de-las-moscas.jpg",
         "category": "Ficción",
         "description": "Fábula moral acerca de la condición humana, 'EL SEÑOR DE LAS MOSCAS' es además un prodigioso relato literario susceptible de lecturas diversas y aun opuestas. Si para unos la parábola que WILLIAM GOLDING estructura en torno a la situación límite de una treintena de muchachos solos en una isla desierta representa una ilustración de las tesis que sitúan la agresividad criminal entre los instintos básicos del hombre, para otros constituye una requisitoria moral contra una educación represiva que no hace sino preparar futuras explosiones de barbarie cuando los controles se relajan."
@@ -121,6 +134,7 @@
         "title": "Harry Potter y la cámara secreta",
         "author": "J.K. Rowling",
         "price": 6000,
+        "stock": 9,
         "pictureUrl": "harry-potter-camara-secreta.jpg",
         "category": "Ficción",
         "description": "Tras derrotar una vez más a lord Voldemort, su siniestro enemigo en Harry Potter y la piedra filosofal, Harry espera impacientemente en casa de sus insoportables tíos el inicio del segundo curso del Colegio Hogwarts de Magia y Hechicería. Sin embargo, la espera dura poco, pues un elfo aparece en su habitación y le advierte que una amenaza mortal se cierne sobre la escuela. Así pues, Harry no se lo piensa dos veces y, acompañado de Ron, su mejor amigo, se dirige a Hogwarts en un coche volador. Pero ¿puede un aprendiz de mago defender la escuela de los malvados que pretenden destruirla? Sin saber que alguien ha abierto la Cámara de los Secretos, dejando escapar una serie de monstruos peligrosos, Harry y sus amigos Ron y Hermione tendrán que enfrentarse con arañas gigantes, serpientes encantadas, fantasmas enfurecidos y, sobre todo, con la mismísima reencarnación de su más temible adversario."
@@ -130,6 +144,7 @@
         "title": "Harry Potter y las reliquias de la muerte",
         "author": "J.K. Rowling",
         "price": 5000,
+        "stock": 8,
         "pictureUrl": "harry-potter-reliquias.jpg",
         "category": "Ficción",
         "description": "La fecha crucial se acerca. Cuando cumpla diecisiete años, Harry perderá el encantamiento protector que lo mantiene a salvo. El anunciado enfrentamiento a muerte con lord Voldemort es inminente, y la casi imposible misión de encontrar y destruir los restantes Horrocruxes más urgente que nunca. Ha llegado la hora final, el momento de tomar las decisiones más difíciles. Harry debe abandonar la calidez y seguridad de La Madriguera para seguir sin miedo ni vacilaciones el inexorable sendero trazado para él. Consciente de lo mucho que está en juego, sólo dentro de sí mismo encontrará la fuerza necesaria que lo impulse en la vertiginosa carrera para enfrentarse con su destino."
@@ -139,6 +154,7 @@
         "title": "Marfil",
         "author": "Mercedes Ron",
         "price": 6000,
+        "stock": 12,
         "pictureUrl": "marfil.jpg",
         "category": "Ficción",
         "description": "Marfil tiene 20 años y vive en Nueva York, pero no todo es tan idílico como parece: hace unos días fue secuestrada mientras paseaba por Central Park. Su padre tiene muy claro que la razón del secuestro ha sido para mandarle un mensaje: podemos llegar a ella. A pesar de ser liberada, todo ha cambiado para Marfil: su vida no es la misma, y ella tampoco. Sobre todo porque ahora nunca está sola: siempre la acompaña Sebastian Moore, su guardaespaldas. ¿Está Marfil preparada para descubrir la verdad de su pasado? ¿Lo pondrá todo en riesgo la atracción que ha surgido entre ambos?"
@@ -148,6 +164,7 @@
         "title": "Odisea",
         "author": "Javier Negrete",
         "price": 6000,
+        "stock": 4,
         "pictureUrl": "odisea.jpg",
         "category": "Ficción",
         "description": "Javier Negrete, animado de un espíritu que solo y con toda justicia se puede calificar de «homérico», recrea en su nueva novela las aventuras del mayor héroe, y a la vez el más humano, de toda la mitología griega: Odiseo, rey de Ítaca, a quien acompañaremos durante los episodios más conocidos de la legendaria guerra de Troya y de su épico regreso a casa."
@@ -157,6 +174,7 @@
         "title": "La psicologia del dinero",
         "author": "Morgan Housel",
         "price": 7000,
+        "stock": 12,
         "pictureUrl": "psicologia-del-dinero.jpg",
         "category": "Economía",
         "description": "Las lecciones atemporales sobre la riqueza, la codicia y la felicidad que le va bien con el dinero no se tratan necesariamente de lo que usted sabe. Se trata de cómo te comportas. Y el comportamiento es difícil de enseñar, incluso a personas realmente inteligentes. Por lo general, se considera que cómo administrar el dinero, invertirlo y tomar decisiones comerciales implica una gran cantidad de cálculos matemáticos, en los que los datos y las fórmulas nos dicen exactamente qué hacer. Pero en el mundo real, las personas no toman decisiones financieras en una hoja de cálculo. Los preparan en la mesa de la cena o en una sala de reuniones, donde se mezclan la historia personal, su visión única del mundo, el ego, el orgullo, el marketing y los incentivos extraños."
@@ -166,6 +184,7 @@
         "title": "S.W: Heredero del imperio",
         "author": "Timothy Zahn",
         "price": 6000,
+        "stock": 5,
         "pictureUrl": "sw-heredero-del-imperio.jpg",
         "category": "Ficción",
         "description": "Han pasado cinco años desde El retorno del Jedi. La Alianza Rebelde ha destruido La Estrella de la Muerte, derrotado a Darth Vader y al emperador, y conducido los restos de la antigua flota imperial a un lejano rincón de la galaxia. La princesa Leia y Han Solo han contraído matrimonio y esperan gemelos Jedi. Y Luke Skywalker ha sido nombrado el primero de una larga serie de Caballeros Jedi. Pero a miles de años luz de distancia, el último señor de la guerra del emperador ha tomado el mando de la destrozada flota imperial, preparándola de nuevo para la guerra. La explosiva confrontación que tiene lugar constituye una epopeya a escala galáctica, llena de acción, inventiva,"
@@ -175,6 +194,7 @@
         "title": "The Bitcoin standard",
         "author": "Saifedean Ammous",
         "price": 7000,
+        "stock": 22,
         "pictureUrl": "the-bitcoin-standard.jpg",
         "category": "Economía",
         "description": "El Bitcoin es la solución novedosa, descentralizada y automatizada de la era digital para el problema del dinero: accesible en todo el mundo, controlado por nadie. ¿Puede este dinero joven y advenedizo desafiar el orden monetario global? El economista Saifedean Ammous rastrea la historia de las tecnologías del dinero hasta las calizas, el ganado, la sal, las cuentas, los metales y la deuda pública, explicando qué le dio a estas tecnologías su papel monetario, qué hace que el dinero sea sólido y los beneficios de un dinero sólido. régimen al crecimiento económico, la innovación, la cultura, el comercio, la libertad individual y la paz internacional."
@@ -184,6 +204,7 @@
         "title": "Tiny habits",
         "author": "BJ Fogg",
         "price": 6500,
+        "stock": 19,
         "pictureUrl": "tiny-habits.jpg",
         "category": "Autoayuda",
         "description": "Cuando se trata de cambios, lo pequeño es poderoso. Empiece con dos flexiones al día, no un entrenamiento de dos horas; o cinco respiraciones profundas cada mañana en lugar de una hora de meditación. En  Tiny Habits , BJ Fogg aporta su experiencia entrenando a más de 40,000 personas para ayudarlo a perder peso, eliminar el estrés, dormir mejor o lograr cualquier objetivo de su elección. Solo necesita la fórmula de comportamiento de Fogg: que sea fácil, que se adapte a su vida y que sea gratificante. Siempre que te subas a tu coche, haz una respiración de yoga. Sonrisa. Siempre que se acueste, apague el teléfono. Date un máximo de cinco."
@@ -193,6 +214,7 @@
         "title": "Will",
         "author": "Will Smith",
         "price": 5500,
+        "stock": 12,
         "pictureUrl": "will.jpg",
         "category": "Autoayuda",
         "description": "Una de las fuerzas de entretenimiento más dinámicas y mundialmente reconocidas de nuestro tiempo se abre completamente sobre su vida, en un libro valiente e inspirador que traza su curva de aprendizaje hasta un lugar donde el éxito externo, la felicidad interna y la conexión humana están alineados. En el camino, Will cuenta la historia completa de uno de los paseos más asombrosos a través del mundo de la música y el cine que nadie haya tenido."
@@ -202,6 +224,7 @@
         "title": "Club de las 5 am",
         "author": "Robin S. Sharma",
         "price": 4000,
+        "stock": 13,
         "pictureUrl": "club-de-las-5am.jpg",
         "category": "Autoayuda",
         "description": "El legendario experto en liderazgo y rendimiento de élite Robin Sharma presentó el concepto de The 5 AM Club hace más de veinte años, basado en una rutina matutina revolucionaria que ha ayudado a sus clientes a maximizar su productividad, activar su mejor salud y a prueba de balas su serenidad en esta era de complejidad abrumadora. Ahora, en este libro que cambia vidas, elaborado a mano por el autor durante un riguroso período de cuatro años, descubrirá el hábito de madrugar que ha ayudado a tantos a lograr resultados épicos mientras mejoran su felicidad, utilidad y sentimientos de vitalidad."
