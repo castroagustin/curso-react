@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
+import { CartContext } from '../contexts/CartContext';
 import '../scss/ItemCount.scss';
 
-const ItemCount = ({ stock, initial, cantidad, setCantidad, setCartBtn }) => {
+const ItemCount = ({ stock, cantidad, setCantidad, setCartBtn, item }) => {
+
+    const { addItem } = useContext(CartContext)
 
     const onAdd = () => {
         if (cantidad <= disponible) {
@@ -41,7 +44,11 @@ const ItemCount = ({ stock, initial, cantidad, setCantidad, setCartBtn }) => {
                     icon={faPlus}
                     onClick={sumarCant} />
             </div>
-            <span className='itemCount__purchase' onClick={onAdd}>Agregar al carrito</span>
+            <span className='itemCount__purchase'
+                onClick={() => {
+                    onAdd();
+                    addItem(item, cantidad);
+                }}>Agregar al carrito</span>
         </div>
     )
 }

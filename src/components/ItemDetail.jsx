@@ -31,7 +31,7 @@ const ItemDetail = ({ item }) => {
                         <Link to={'/cart'} className='itemDetail__cartBtn'>
                             <FontAwesomeIcon icon={faShoppingCart} /> Agregaste {cantidad} producto/s al carrito
                         </Link> :
-                        <ItemCount stock={item.stock} initial={1} cantidad={cantidad} setCantidad={setCantidad} setCartBtn={setCartBtn} />
+                        <ItemCount stock={item.stock} initial={1} cantidad={cantidad} setCantidad={setCantidad} setCartBtn={setCartBtn} item={item} />
                 }
 
             </div>

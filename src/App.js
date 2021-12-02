@@ -1,10 +1,10 @@
 import './App.css';
 import NavBar from './components/NavBar';
-// import ItemCount from './components/ItemCount';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { CartProvider } from './contexts/CartContext';
 
 const App = () => {
 
@@ -37,16 +37,18 @@ const App = () => {
   }
 
   return (
-    <BrowserRouter>
-      <NavBar setCurrentCategory={setCurrentCategory} />
-      <Routes>
-        <Route path='/' element={<ItemListContainer data={filterProds(data)} setCurrentProd={setCurrentProd} />} />
-        <Route path='/item/:itemId' element={<ItemDetailContainer currentProd={currentProd} />} />
-        <Route path='/categorias/:categoryName' element={<ItemListContainer data={filterProds(data)} setCurrentProd={setCurrentProd} />} />
-      </Routes>
+    <CartProvider>
+      <BrowserRouter>
+        <NavBar setCurrentCategory={setCurrentCategory} />
+        <Routes>
+          <Route path='/' element={<ItemListContainer data={filterProds(data)} setCurrentProd={setCurrentProd} />} />
+          <Route path='/item/:itemId' element={<ItemDetailContainer currentProd={currentProd} />} />
+          <Route path='/categorias/:categoryName' element={<ItemListContainer data={filterProds(data)} setCurrentProd={setCurrentProd} />} />
+        </Routes>
 
-      {/* <ItemCount stock='15' initial='1' /> */}
-    </BrowserRouter>
+        {/* <ItemCount stock='15' initial='1' /> */}
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 
