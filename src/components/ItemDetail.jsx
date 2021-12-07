@@ -29,7 +29,7 @@ const ItemDetail = ({ item }) => {
                 {
                     cartBtn ?
                         <Link to={'/cart'} className='itemDetail__cartBtn'>
-                            <FontAwesomeIcon icon={faShoppingCart} /> Agregaste {cantidad} producto/s al carrito
+                            <FontAwesomeIcon icon={faShoppingCart} /> Terminar compra
                         </Link> :
                         <ItemCount stock={item.stock} initial={1} cantidad={cantidad} setCantidad={setCantidad} setCartBtn={setCartBtn} item={item} />
                 }

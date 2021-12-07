@@ -11,7 +11,6 @@ const ItemCount = ({ stock, cantidad, setCantidad, setCartBtn, item }) => {
     const onAdd = () => {
         if (cantidad <= disponible) {
             setDisponible(disponible - cantidad);
-            alert(`Agrego ${cantidad} ${cantidad > 1 ? 'productos' : 'producto'} al carrito`);
             setCantidad(cantidad);
             setCartBtn(true)
         }

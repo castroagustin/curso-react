@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import '../scss/NavBar.scss';
 import { Link } from 'react-router-dom';
+import CartWidget from './CartWidget';
 
 const NavBar = ({ setCurrentCategory }) => {
     return (
@@ -21,12 +22,7 @@ const NavBar = ({ setCurrentCategory }) => {
                         icon={faSearch} />
                     <input type='text' className='navBar__searchInput' placeholder='Buscar...' />
                 </div>
-                <div className='navBar__cartContainer'>
-                    <span className='cart__badge'>4</span>
-                    <FontAwesomeIcon
-                        className='navBar__cartIcon'
-                        icon={faShoppingCart} />
-                </div>
+                <CartWidget />
             </div>
         </nav>
     )

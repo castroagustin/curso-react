@@ -5,6 +5,7 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { CartProvider } from './contexts/CartContext';
+import Cart from './components/Cart';
 
 const App = () => {
 
@@ -44,6 +45,7 @@ const App = () => {
           <Route path='/' element={<ItemListContainer data={filterProds(data)} setCurrentProd={setCurrentProd} />} />
           <Route path='/item/:itemId' element={<ItemDetailContainer currentProd={currentProd} />} />
           <Route path='/categorias/:categoryName' element={<ItemListContainer data={filterProds(data)} setCurrentProd={setCurrentProd} />} />
+          <Route path='/cart' element={<Cart />} />
         </Routes>
 
         {/* <ItemCount stock='15' initial='1' /> */}
