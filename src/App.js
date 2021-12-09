@@ -5,46 +5,35 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { CartProvider } from './contexts/CartContext';
+import { collection, getDocs, getFirestore } from 'firebase/firestore';
 import Cart from './components/Cart';
 
 const App = () => {
 
-  const [data, setData] = useState(null);
-  const [currentProd, setCurrentProd] = useState(null);
-  const [currentCategory, setCurrentCategory] = useState('');
-
+  const [products, setProducts] = useState(null);
 
   useEffect(() => {
-    getData('JSON/booksData.json');
+    const db = getFirestore()
+    const itemsCollection = collection(db, 'items');
+
+    getDocs(itemsCollection).then(snapshot => {
+      setProducts(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })))
+    })
   }, [])
 
 
-  const filterProds = (prods) => {
-    return currentCategory === '' ? prods : prods.filter(prod => prod.category === currentCategory);
-  }
-
-  const getData = (dataSrc) => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(
-          fetch(dataSrc)
-            .then(res => res.json())
-            .then(res => {
-              setData(res)
-            })
-        )
-      }, 2000)
-    })
-  }
+  /*   const filterProds = (prods) => {
+      return currentCategory === '' ? prods : prods.filter(prod => prod.category === currentCategory);
+    } */
 
   return (
     <CartProvider>
       <BrowserRouter>
-        <NavBar setCurrentCategory={setCurrentCategory} />
+        <NavBar />
         <Routes>
-          <Route path='/' element={<ItemListContainer data={filterProds(data)} setCurrentProd={setCurrentProd} />} />
-          <Route path='/item/:itemId' element={<ItemDetailContainer currentProd={currentProd} />} />
-          <Route path='/categorias/:categoryName' element={<ItemListContainer data={filterProds(data)} setCurrentProd={setCurrentProd} />} />
+          <Route path='/' element={<ItemListContainer data={products} />} />
+          <Route path='/item/:itemId' element={<ItemDetailContainer />} />
+          <Route path='/categorias/:categoryName' element={<ItemListContainer data={products} />} />
           <Route path='/cart' element={<Cart />} />
         </Routes>
 
