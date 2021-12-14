@@ -24,7 +24,6 @@ const ItemListContainer = () => {
 
     }, [categoryName])
 
-    console.log(products)
     return (
         <section className='itemListContainer'>
             {products ? <ItemList items={products} /> : <Spinner />}
