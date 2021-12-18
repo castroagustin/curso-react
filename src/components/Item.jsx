@@ -12,7 +12,6 @@ const Item = ({ item }) => {
                 <span className='item__text'>{`$${item.price}`}</span>
                 <span className='item__secondaryText'>{item.category}</span>
             </div>
-            <span className='item__addToCart'>Agregar al carrito</span>
         </>
     )
 }

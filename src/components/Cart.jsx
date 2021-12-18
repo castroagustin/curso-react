@@ -3,7 +3,7 @@ import { CartContext } from '../contexts/CartContext'
 import '../scss/Cart.scss'
 import { useContext, useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { addDoc, collection, getFirestore } from 'firebase/firestore';
+import { addDoc, collection, doc, getFirestore, writeBatch } from 'firebase/firestore';
 import CartProduct from './CartProduct'
 import Spinner from './Spinner';
 
@@ -13,7 +13,6 @@ const Cart = () => {
     const formTelRef = useRef();
 
     const { cart, setCart } = useContext(CartContext);
-    console.log(cart)
     let { items, totalPrice } = cart;
 
     const [userName, setUserName] = useState('');
@@ -21,7 +20,6 @@ const Cart = () => {
     const [userPhone, setUserPhone] = useState('');
     const [orderId, setOrderId] = useState('')
     const [showAlert, setShowAlert] = useState(false)
-    console.log(orderId)
 
     const handleNameChange = (event) => { setUserName(event.target.value) }
     const handleEmailChange = (event) => { setUserEmail(event.target.value) }
@@ -41,8 +39,20 @@ const Cart = () => {
                 total: cart.totalPrice
             }
             sendOrder(order);
-            console.log(order)
+            console.log(order);
+            removeStock();
         }
+    }
+
+    const removeStock = () => {
+        const db = getFirestore()
+        const batch = writeBatch(db);
+
+        cart.items.forEach(item => {
+            const itemRef = doc(db, 'items', item.id);
+            batch.update(itemRef, { stock: item.stock - item.quantity })
+        })
+        batch.commit();
     }
 
     const sendOrder = (order) => {
@@ -64,6 +74,7 @@ const Cart = () => {
         setUserPhone('')
     }
     const validateForm = () => {
+        /* eslint-disable */
         const regexPhone = /^\(?\d{2}\)?[\s\.-]?\d{4}[\s\.-]?\d{4}$/;
         const regexMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
 

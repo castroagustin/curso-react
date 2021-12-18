@@ -21,11 +21,6 @@ const App = () => {
     })
   }, [])
 
-
-  /*   const filterProds = (prods) => {
-      return currentCategory === '' ? prods : prods.filter(prod => prod.category === currentCategory);
-    } */
-
   return (
     <CartProvider>
       <BrowserRouter>
@@ -36,8 +31,6 @@ const App = () => {
           <Route path='/categorias/:categoryName' element={<ItemListContainer data={products} />} />
           <Route path='/cart' element={<Cart />} />
         </Routes>
-
-        {/* <ItemCount stock='15' initial='1' /> */}
       </BrowserRouter>
     </CartProvider>
   );

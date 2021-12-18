@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
         <nav className='navBar'>
             <ul className='navBar__menu' >
-                <li><a href="/">Inicio</a></li>
+                <Link to='/'>Inicio</Link>
             </ul>
             <ul className='navBar__menu navBar__menu--categories' >
                 <Link to='/categorias/Autoayuda'>Autoayuda</Link>
